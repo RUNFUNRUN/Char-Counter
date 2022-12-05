@@ -7,7 +7,7 @@ export function Counter() {
     const [noNewlineCount, setNoNewlineCount] = useState(text.length);
     const [simpleCount, setSimpleCount] = useState(text.length);
 
-    const handleCountChange = (e) => {
+    const handleTextChange = (e) => {
         setText(e.target.value);
     };
 
@@ -26,7 +26,7 @@ export function Counter() {
             </div>
             <textarea
                 rows="20" cols="80" value={text}
-                onChange={handleCountChange}
+                onChange={handleTextChange}
             />
         </div>
     );
